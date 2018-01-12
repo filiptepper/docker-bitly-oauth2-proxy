@@ -1,5 +1,7 @@
 FROM golang:1.9 AS builder
 
+LABEL maintainer="Filip Tepper https://github.com/filiptepper/docker-bitly-oauth2-proxy"
+
 WORKDIR /go/src/github.com/bitly/oauth2_proxy
 
 COPY oauth2_proxy .
